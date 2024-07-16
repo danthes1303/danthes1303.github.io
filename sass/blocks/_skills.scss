@@ -1,0 +1,94 @@
+.skills {
+    padding-top: 100px;
+    &__title {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        @include bordlime;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 836px;
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        column-gap: 13px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #ffffff;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: 13px;
+        &__title {
+            margin-top: 20px;
+        }
+        &__text {
+            color: #ffffff;
+            font-size: 12px;
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}
+.progress {
+    &__wrapper {
+    display: grid;
+    margin-top: 127px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 62px);
+    column-gap: 45px;
+    row-gap: 38px;
+    }
+    &__item {
+        margin-bottom: 38px;
+        width: 100%;
+        height: 100%;
+        &__title {
+            display: flex;
+            justify-content: space-between;
+        }
+        span.title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            @include bordlime;
+            border: 2px solid #00C7B2;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        &__line {
+            position: relative;
+            &_grey {
+                display: block;
+                width: 100%;
+                height: 14px;
+                background-color: #E8E4DE;
+                border-radius: 4px;
+            }
+            &_green {
+                position: absolute;
+                top: 0;
+                display: block;
+                height: 14px;
+                background-color: #00C7B2;
+                border-radius: 4px;
+            }
+        }
+    }
+}

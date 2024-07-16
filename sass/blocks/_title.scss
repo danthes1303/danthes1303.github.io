@@ -6,6 +6,8 @@
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
+        color: #ffffff;
+        font-weight: bold;
     }
     &_fz16 {
         font-size: 16px;
@@ -15,6 +17,11 @@
         font-size: 48px;
         line-height: 40px;
         color: $main-color
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+        color: $main-color;
     }
     &__moe {
         font-size: 20px;
