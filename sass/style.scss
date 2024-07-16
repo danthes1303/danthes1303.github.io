@@ -9,14 +9,19 @@
 	padding: 0;
 }
 
+body {
+	background: $sub-color;
+}
 
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
 
+
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/aboutme';
