@@ -1,14 +1,13 @@
 .skills {
     padding-top: 100px;
     &__title {
-        width: 70px;
-        height: 70px;
         margin: 0 auto;
+        width: 119px;
+        height: 36px;
         @include bordlime;
-        border-radius: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
     &__subtitle {
         text-align: center;

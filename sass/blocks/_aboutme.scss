@@ -1,6 +1,8 @@
 .aboutme__wrapper {
-    width: 572px;
-    margin-left: 468px;
+    display: grid;
+    grid-template-columns: 480px 572px;
+    grid-template-rows: 530px;
+    justify-content: space-between;
 }
 
 .grid-container {
@@ -20,6 +22,12 @@
 
 .aboutme {
     min-height: 535px;
+    &__photo {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
     &__subtitle {
         width: 130px;
         padding: 12px 25px;

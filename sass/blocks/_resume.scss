@@ -2,12 +2,12 @@
     padding-top: 120px;
     &__title {
         margin: 0 auto;
-        text-align: center;
+        width: 119px;
+        height: 36px;
         @include bordlime;
-        width: 60px;
-        height: 60px;
-        padding: 16px 8px;
-        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__subtitle {
         text-align: center;
