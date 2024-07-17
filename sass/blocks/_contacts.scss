@@ -122,5 +122,8 @@
         border-radius: 15px;
         background: none;
         color: #fff;
+        &:hover {
+            color: $main-color;
+        }
     }
 }
