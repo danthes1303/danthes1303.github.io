@@ -1,7 +1,7 @@
 .aboutme__wrapper {
     display: grid;
-    grid-template-columns: 480px 572px;
-    grid-template-rows: 530px;
+    grid-template-columns: 400px 572px;
+    grid-template-rows: minmax(600px, auto);
     justify-content: space-between;
 }
 
@@ -9,7 +9,8 @@
     display: grid;
     grid-template-columns: repeat(2, 252px);
     grid-template-rows: repeat(2, 123px);
-    justify-content: space-between;
+    // justify-content: space-between;
+    column-gap: 68px;
     align-items: center;
     margin-top: 33px;
 }
@@ -26,6 +27,7 @@
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
     &__subtitle {

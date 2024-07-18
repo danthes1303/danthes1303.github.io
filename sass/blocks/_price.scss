@@ -7,9 +7,6 @@
         grid-template-rows: repeat(3, auto);
         grid-auto-rows: auto;
         justify-content: space-between;
-    }
-    &__items {
-        display: grid;
         row-gap: 15px;
     }
     &__item {

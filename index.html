@@ -99,10 +99,13 @@
                     <img src="https://i.pinimg.com/736x/8b/5a/91/8b5a914d027c22873d77cf03e08dd495.jpg" alt="">
                 </div>
                 <div class="aboutme__other">
-                    <h2 class="title title_fz16 aboutme__subtitle">Про меня</h2>
-                    <div class="title aboutme__title">Меня зовут Даниил</div>
-                    <div class="divider"></div>
-                    <div class="aboutme__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    <div class="aboutme__wrapper__text">
+                        <h2 class="title title_fz16 aboutme__subtitle">Про меня</h2>
+                        <div class="title aboutme__title">Меня зовут Даниил</div>
+                        <div class="divider"></div>
+                        <div class="aboutme__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    </div>
+                    
                     <div class="grid-container">
                         <div class="aboutme__item grid-elem">
                             <img src="icons/about_me/web_development.svg" alt="webdev">
@@ -216,103 +219,91 @@
             <h3 class="title title_fz36 skills__subtitle">Что я использую в работе</h3>
             <div class="divider divider_center"></div>
             <div class="skills__wrapper">
-                <div class="skills__column">
-                    <div class="skills__block">
-                        <img src="icons/hardskills/html5.svg" alt="html">
-                        <div class="title_fz14 skills__block__title">HTML5</div>
-                        <div class="skills__block__text">
-                            Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
-                        </div>
-                    </div>
-                    <div class="skills__block">
-                        <img src="icons/hardskills/React.svg" alt="react">
-                        <div class="title_fz14 skills__block__title">React</div>
-                        <div class="skills__block__text">
-                            Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
-                        </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/html5.svg" alt="html">
+                    <div class="title_fz14 skills__block__title">HTML5</div>
+                    <div class="skills__block__text">
+                        Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
                     </div>
                 </div>
-                <div class="skills__column">
-                    <div class="skills__block">
-                        <img src="icons/hardskills/css3.svg" alt="css3">
-                        <div class="title_fz14 skills__block__title">CSS3</div>
-                        <div class="skills__block__text">
-                            Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
-                        </div>
-                    </div>
-                    <div class="skills__block">
-                        <img src="icons/hardskills/Node.js.svg" alt="nodejs">
-                        <div class="title_fz14 skills__block__title">Node.js</div>
-                        <div class="skills__block__text">
-                            Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
-                        </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/React.svg" alt="react">
+                    <div class="title_fz14 skills__block__title">React</div>
+                    <div class="skills__block__text">
+                        Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
                     </div>
                 </div>
-                <div class="skills__column">
-                    <div class="skills__block">
-                        <img src="icons/hardskills/JS.svg" alt="javascript">
-                        <div class="title_fz14 skills__block__title">Java Script</div>
-                        <div class="skills__block__text">
-                            Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
-                        </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/css3.svg" alt="css3">
+                    <div class="title_fz14 skills__block__title">CSS3</div>
+                    <div class="skills__block__text">
+                        Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
                     </div>
-                    <div class="skills__block">
-                        <img src="icons/hardskills/Mongo.db.svg" alt="mongodb">
-                        <div class="title_fz14 skills__block__title">Mongo.db</div>
-                        <div class="skills__block__text">
-                            Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
-                        </div>
+                </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/Node.js.svg" alt="nodejs">
+                    <div class="title_fz14 skills__block__title">Node.js</div>
+                    <div class="skills__block__text">
+                        Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
+                    </div>
+                </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/JS.svg" alt="javascript">
+                    <div class="title_fz14 skills__block__title">Java Script</div>
+                    <div class="skills__block__text">
+                        Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
+                    </div>
+                </div>
+                <div class="skills__block">
+                    <img src="icons/hardskills/Mongo.db.svg" alt="mongodb">
+                    <div class="title_fz14 skills__block__title">Mongo.db</div>
+                    <div class="skills__block__text">
+                        Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
                     </div>
                 </div>
             </div>
             <div class="progress">
                 <div class="progress__wrapper">
-                    <div class="progress__column">
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Создание сайтов</span><span class="percent">100%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
-                        </div>
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Креативность</span><span class="percent">75%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Создание сайтов</span><span class="percent">100%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
                         </div>
                     </div>
-                    <div class="progress__column">
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Создание приложений</span><span class="percent">85%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
-                        </div>
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Создание дизайна</span><span class="percent">90%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Креативность</span><span class="percent">75%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
                         </div>
                     </div>
-                    <div class="progress__column">
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Работа с данными</span><span class="percent">90%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Создание приложений</span><span class="percent">85%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
                         </div>
-                        <div class="progress__item">
-                            <div class="title title_fz14 progress__item__title"><span class="title">Soft skills</span><span class="percent">95%</span></div>
-                            <div class="progress__item__line">
-                                <div class="progress__item__line_grey"></div>
-                                <div class="progress__item__line_green"></div>
-                            </div>
+                    </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Создание дизайна</span><span class="percent">90%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
+                        </div>
+                    </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Работа с данными</span><span class="percent">90%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
+                        </div>
+                    </div>
+                    <div class="progress__item">
+                        <div class="title title_fz14 progress__item__title"><span class="title">Soft skills</span><span class="percent">95%</span></div>
+                        <div class="progress__item__line">
+                            <div class="progress__item__line_grey"></div>
+                            <div class="progress__item__line_green"></div>
                         </div>
                     </div>
                 </div>
@@ -354,34 +345,30 @@
         <div class="divider divider_center"></div>
         <div class="container">
             <div class="price__wrapper">
-                <div class="price__items">
-                    <div class="price__item">
-                        <div class="price__item__circle"></div>
-                        <div class="price__item__title title title_fz14">Landing-page<span>от 8000 руб.</span></div>
-                        <div class="price__item__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="price__item__title title title_fz14">Корпоративный сайт<span>от 20000 руб.</span></div>
-                        <div class="price__item__descr">Сайт для вашего бизнеса или компании</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="price__item__title title title_fz14">Интернет-магазин <span>от 30000 руб.</span></div>
-                        <div class="price__item__descr">Инструмент для ваших продаж в сети</div>
-                    </div>
+                <div class="price__item">
+                    <div class="price__item__circle"></div>
+                    <div class="price__item__title title title_fz14">Landing-page<span>от 8000 руб.</span></div>
+                    <div class="price__item__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
                 </div>
-                <div class="price__items">
-                    <div class="price__item">
-                        <div class="price__item__title title title_fz14">Web-приложение  <span>от 28000 руб.</span></div>
-                        <div class="price__item__descr">Приложение внутри браузера для лучшего комфорта</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="price__item__title title title_fz14">Android/IOS Приложение <span>от 25000 руб.</span></div>
-                        <div class="price__item__descr">Приложение для смартфона любой ОС</div>
-                    </div>
-                    <div class="price__item">
-                        <div class="price__item__title title title_fz14">Дизайн <span>Индивидуально</span></div>
-                        <div class="price__item__descr">Создам дизайн для вашего сайта/приложения...</div>
-                    </div>
+                <div class="price__item">
+                    <div class="price__item__title title title_fz14">Корпоративный сайт<span>от 20000 руб.</span></div>
+                    <div class="price__item__descr">Сайт для вашего бизнеса или компании</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__item__title title title_fz14">Интернет-магазин <span>от 30000 руб.</span></div>
+                    <div class="price__item__descr">Инструмент для ваших продаж в сети</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__item__title title title_fz14">Web-приложение  <span>от 28000 руб.</span></div>
+                    <div class="price__item__descr">Приложение внутри браузера для лучшего комфорта</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__item__title title title_fz14">Android/IOS Приложение <span>от 25000 руб.</span></div>
+                    <div class="price__item__descr">Приложение для смартфона любой ОС</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__item__title title title_fz14">Дизайн <span>Индивидуально</span></div>
+                    <div class="price__item__descr">Создам дизайн для вашего сайта/приложения...</div>
                 </div>
             </div>
         </div>
@@ -391,7 +378,6 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <!-- здесь должна быть фотка -->
                      <img src="https://i.pinimg.com/564x/1b/1c/e6/1b1ce6ca76d7935624246f0894873ed0.jpg" alt="">
                 </div>
                 <div class="contacts__descr">
@@ -414,11 +400,11 @@
                     </div>
 
                     <form action="#" class="contacts__form">
-                        <div class="contacts__input">
+                        <div class="contacts__input name">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
-                        <div class="contacts__input">
+                        <div class="contacts__input email">
                             <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
