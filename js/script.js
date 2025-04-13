@@ -22,30 +22,6 @@ percents.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-const policyLink = document.querySelector('a[href="policy.html"]'); // Находим ссылку на политику конфиденциальности
-
-policyLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Предотвращаем переход по ссылке
-
-    // Получаем контент из policy.html (см. объяснение ниже)
-    fetch('policy.html')
-        .then(response => response.text())
-        .then(html => {
-            // Используем Telegram Web Apps API для открытия popup
-            Telegram.WebApp.showPopup({
-                title: 'Политика конфиденциальности',
-                message: html, // Используем HTML контент в качестве сообщения
-                buttons: [
-                    { type: 'default', text: 'Закрыть' } // Кнопка закрытия
-                ]
-            });
-        })
-        .catch(error => {
-            console.error('Ошибка загрузки policy.html:', error);
-            alert('Не удалось загрузить политику конфиденциальности.');
-        });
-});
-
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
