@@ -23,28 +23,26 @@ percents.forEach((item, i) => {
 });
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Предотвращаем перезагрузку страницы
+    event.preventDefault();
 
-    const formData = new FormData(this); // Собираем данные формы
+    const formData = new FormData(this);
     const data = {};
     formData.forEach((value, key) => {
         data[key] = value;
     });
 
-    fetch('http://localhost:8080', {
+    fetch('http://localhost:8080/submit-form', { // Исправленный URL!
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json' // Указываем, что отправляем JSON
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data) // Преобразуем данные в JSON
+        body: JSON.stringify(data)
     })
     .then(response => {
         if (response.ok) {
-            // Успешно отправлено
             alert('Сообщение отправлено!');
-            document.getElementById('myForm').reset(); // Очищаем форму
+            document.getElementById('myForm').reset();
         } else {
-            // Ошибка
             alert('Ошибка отправки сообщения!');
         }
     })
