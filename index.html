@@ -58,12 +58,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link" id="menu__link__aboutme_btn"><a href="#aboutme__id">ПРО МЕНЯ</a></li>
+                    <li class="menu__link" id="menu__link__resume_btn"><a href="#resume__id">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link" id="menu__link__skills_btn"><a href="#skills__id">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link" id="menu__link__portfolio_btn"><a href="#portfolio__id">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link" id="menu__link__price_btn"><a href="#price__id">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link" id="menu__link__contacts_btn"><a href="#contacts__id">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -86,7 +86,7 @@
             <div class="title title__moe">*но собираюсь им стать</div>
             <div class="title title__moe__lied">**сайт я, конечно, сделал сам, но всё, что написано ниже всерьёз не берите, чем то заполнить его всё таки надо:)</div>
             <div class="promo__btns">
-                <a href="#resume__id" class="promo__link btn">Портфолио</a>
+                <a href="#portfolio__id" class="promo__link btn">Портфолио</a>
                 <a href="#aboutme__id" class="promo__link">Про меня</a>
             </div>
         </div>
@@ -213,7 +213,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills__id">
         <div class="container">
             <h2 class="title title_fz16 skills__title">Навыки</h2>
             <h3 class="title title_fz36 skills__subtitle">Что я использую в работе</h3>
@@ -311,7 +311,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio__id">
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
             <h3 class="title title_fz36 portfolio__subtitle">Мои работы</h3>
@@ -340,7 +340,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price__id">
         <h2 class="title title_fz16 portfolio__title">Прайс-лист</h2>
         <div class="divider divider_center"></div>
         <div class="container">
@@ -374,7 +374,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts__id">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -399,7 +399,7 @@
                         Или оставьте ваши данные и я сам вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form method="POST" action="http://localhost:8080/submit-form" class="contacts__form" id="myForm">
                         <div class="contacts__input name">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
@@ -409,7 +409,29 @@
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea minlength="20" maxlength="255" name="message" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn" type="submit">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- <form method="POST" action="[URL_ВАШЕГО_SPRING_BOOT_БЭКЕНДА]/submit-form" class="contacts__form">
+                        <div class="contacts__input name">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input email">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea minlength="50" maxlength="500" name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
@@ -419,7 +441,7 @@
                                 <span>Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></span>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
