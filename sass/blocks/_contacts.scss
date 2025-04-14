@@ -74,6 +74,9 @@
         a {
             color: $main-color;
         }
+        p {
+            padding-top: 50px
+        }
     }
     &__input {
         position: relative;
@@ -125,6 +128,12 @@
         height: 45px;
         &:hover {
             color: $main-color;
+        }
+    }
+    #policy__id {
+        display: none;
+        &.show {
+            display: block;
         }
     }
 }

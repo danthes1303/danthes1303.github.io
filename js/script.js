@@ -1,7 +1,9 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close'),
-      aboutme_btn = document.querySelector('.menu__list');
+      aboutme_btn = document.querySelector('.menu__list'),
+      policy_btn = document.querySelector('.policy__btn');
+      policy = document.querySelector('#policy__id')
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -13,6 +15,10 @@ closeElem.addEventListener('click', () => {
 
 aboutme_btn.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+policy_btn.addEventListener('click', () => {
+    policy.classList.toggle('show');
 });
 
 const percents = document.querySelectorAll('.percent'),
