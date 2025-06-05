@@ -1,9 +1,9 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close'),
-      aboutme_btn = document.querySelector('.menu__list'),
-      policy_btn = document.querySelector('.policy__btn');
-      policy = document.querySelector('#policy__id')
+    menu = document.querySelector('.menu'),
+    closeElem = document.querySelector('.menu__close'),
+    aboutme_btn = document.querySelector('.menu__list'),
+    policy_btn = document.querySelector('.policy__btn');
+policy = document.querySelector('#policy__id')
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -22,13 +22,13 @@ policy_btn.addEventListener('click', () => {
 });
 
 const percents = document.querySelectorAll('.percent'),
-      lines = document.querySelectorAll('.progress__item__line_green');
+    lines = document.querySelectorAll('.progress__item__line_green');
 
 percents.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-document.getElementById('myForm').addEventListener('submit', function(event) {
+document.getElementById('myForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const formData = new FormData(this);
@@ -37,25 +37,25 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         data[key] = value;
     });
 
-    fetch('http://localhost:8080/submit-form', { // Исправленный URL!
+    fetch('http://38.180.114.178:8080/submit-form', { // Исправленный URL!
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     })
-    .then(response => {
-        if (response.ok) {
-            alert('Сообщение отправлено!');
-            document.getElementById('myForm').reset();
-        } else {
-            alert('Ошибка отправки сообщения!');
-        }
-    })
-    .catch(error => {
-        console.error('Ошибка:', error);
-        alert('Произошла ошибка при отправке!');
-    });
+        .then(response => {
+            if (response.ok) {
+                alert('Сообщение отправлено!');
+                document.getElementById('myForm').reset();
+            } else {
+                alert('Ошибка отправки сообщения!');
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке!');
+        });
 });
 
 
