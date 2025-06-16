@@ -37,23 +37,38 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         data[key] = value;
     });
 
-    fetch('http://103.74.93.220:8080/submit-form', {
+    const url = 'http://38.180.114.178:8080/submit-form';  // URL API
+
+    fetch(url, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'  // Explicitly state what you expect back
         },
         body: JSON.stringify(data)
     })
         .then(response => {
-            if (response.ok) {
-                alert('Сообщение отправлено!');
-                document.getElementById('myForm').reset();
-            } else {
-                alert('Ошибка отправки сообщения!');
+            if (!response.ok) {
+                // Improve error handling by logging the status code and text
+                console.error(`HTTP error! Status: ${response.status}, Text: ${response.statusText}`);
+                throw new Error(`HTTP error! Status: ${response.status}, Text: ${response.statusText}`); // Throw error to be caught in the catch block
             }
+            return response.json(); // Or response.text() if the server returns plain text
+        })
+        .then(responseData => {
+            // Process the response data from the server
+            console.log('Success:', responseData); // Log successful response
+
+            // Display a success message to the user
+            alert('Сообщение отправлено!');
+
+            // Reset the form
+            document.getElementById('myForm').reset();
         })
         .catch(error => {
-            console.error('Ошибка:', error);
-            alert('Произошла ошибка при отправке!');
+            console.error('Error:', error); // Log the full error for debugging
+
+            // Display an error message to the user
+            alert('Произошла ошибка при отправке: ' + error.message); // Provide more specific error information to the user
         });
 });
