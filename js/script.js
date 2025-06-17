@@ -37,7 +37,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         data[key] = value;
     });
 
-    fetch('http://103.74.93.220:8080/submit-form', {
+    fetch('https://localhost:8080/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -57,5 +57,3 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
             alert('Произошла ошибка при отправке!');
         });
 });
-
-
