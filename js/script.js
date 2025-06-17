@@ -37,7 +37,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         data[key] = value;
     });
 
-    fetch('https://localhost:8080/submit-form', {
+    fetch('http://localhost:8080/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
